@@ -22,10 +22,4 @@ This will come in the future
 
 ## Installing
 
-### Windows EXE
-
-Binary releases are available for windows in the release tab of github. It contains both the CLI and GUI editions. Maybe in the future there will be an installer provided, but not now, especially considering that this program is probably not going to be used regularly by its users.
-
-### Other OSes
-
-This progam may be run from source: main.py is the CLI version and ui.py is the GUI version.
+Due to how this program operates, it is not possible to produce an EXE for it. Therefore, you must have python on your computer to run this program.
