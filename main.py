@@ -155,7 +155,7 @@ if __name__ == "__main__":
     if OUTPUT_MODE >= 2:
         print("Scanning...")
     os.chdir(DIR)
-    files = os.listdir(DIR+"/region")
+    files = [f for f in os.listdir(DIR+"/region") if f.endswith("mca")]
     TOTAL_TO_COMPLETE = len(files)
     threading.Thread(target=run_progress_thread).start()
     with multiprocessing.Pool(initializer=init_worker,initargs=(TERMINATED,DONE_SO_FAR,SPACE_SAVED,DIR),processes=result.cores) as pool:  
